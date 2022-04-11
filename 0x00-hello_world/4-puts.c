@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	/* displays the char inside quotation */
-	puts("\"Programming is like building a multilingual puzzle\n");
-	return (0);
+  /* displays the char inside quotation */
+  puts("\"Programming is like building a multilingual puzzle");
+  return (0);
 } 
