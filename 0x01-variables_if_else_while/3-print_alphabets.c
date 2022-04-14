@@ -4,7 +4,6 @@
 *main-entry to c program 
 *
 *desc:this program will print all letter of english lang both upper and lower case 
-*
 *retuern:returns zero
 */
 int main(void)
