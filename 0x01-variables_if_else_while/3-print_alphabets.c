@@ -1,22 +1,30 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
+/* betty style doc for function main goes there */
 /**
-*main-entry to c program 
+*main - Entry point
 *
-*desc:this program will print all letter of english lang both upper and lower case 
-*retuern:returns zero
+*Return: Always 0 (Success)
 */
 int main(void)
 {
-char letter;
+char l;
+char m;
 
-for (letter = 'a'; letter <= 'z'; letter++)
-putchar(letter);
-
-for (letter='A'; letter <='z'; letter++)
-putchar(letter);
-
+l = 'a';
+m = 'A';
+while (l <= 'z')
+{
+putchar(l);
+l++;
+}
+while (m <= 'Z')
+{
+putchar(m);
+m++;
+}
 putchar('\n');
-
-return(0);
+return (0);
 }
