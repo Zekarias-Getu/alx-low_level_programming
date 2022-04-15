@@ -1,8 +1,9 @@
-#include <stdlib.h>
+#include "main.h"
+
 
 /**
-*main - Prints _putchar with _putchar
-*Description: Prints _putchar with _putchar
+* main - Prints _putchar with _putchar
+* Description: Prints _putchar with _putchar
 * Return: Always 0 (Success)
 */
 
@@ -14,7 +15,7 @@ char s[] = "_putchar\n";
 while (i < 9)
 {
 c = s[i];
-putchar(c);
+_putchar(c);
 i++;
 }
 
