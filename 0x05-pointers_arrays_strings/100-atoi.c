@@ -7,7 +7,7 @@
 */
 int is_numerical(unsigned int n)
 {
-return (n >= '0' && n <= '9');
+	return (n >= '0' && n <= '9');
 }
 
 /**
@@ -19,24 +19,24 @@ return (n >= '0' && n <= '9');
 
 int _atoi(char *s)
 {
-unsigned int num, i;
-int sign = 1;
+	unsigned int num, i;
+	int sign = 1;
 
-num = 0;
+	num = 0;
 
-for (i = 0; s[i] != '\0'; i++)
-{
-if (is_numerical(s[i]))
-{
-num = (s[i] - 48) + num * 10;
-if (s[i + 1] == ' ')
-break;
-}
-else if (s[i + 1] == '-')
-{
-sign *= -1;
-}
-}
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (is_numerical(s[i]))
+		{
+			num = (s[i] - 48) + num * 10;
+			if (s[i + 1] == ' ')
+				break;
+		}
+		else if (s[i + 1] == '-')
+		{
+			sign *= -1;
+		}
+	}
 
-return (num * sign);
+		return (num * sign);
 }
